@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Contactanos - Barberia Alura</title>
+        <link rel="stylesheet" href="reset.css"><!--esta linea es para import al reset.css para eliminar las configuraciones por default como margenes-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header> <!--el header es una etiqueta especial para el encabezado de la pagina-->
+            <div class="caja">
+              <h1><img src="imagenes/logo.png"></h1>
+                <nav><!--etiqueta para indicar que es una lista desordenada con navegacion (link agragado en cada palabra)-->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contactanos</a></li>                    
+                    </ul>                
+                </nav>
+            </div>     
+        </header>
+        <main>
+            <form><!--form es estiqueta para poder crear formularios, tambien se incluye 'label for' e 'input type' -->
+
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correoelectronico"> Correo electronico</label>
+                <input type="email" id="correoelectrinico" class="input-padron" required placeholder="email@dominio.com">
+
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(xxx)xxx xx xx">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" required></textarea>
+
+                <fieldset><!--etiqueta que agrupa los mismos items a la  misma informacion-->
+                    <legend>¿Como le gustaria que lo contactemos?</legend>
+
+                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                        
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                        
+                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>¿En cual horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                
+
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de la Barberia Alura?</label>
+
+                <input type="submit" value="Enviar formulario" class="enviar">
+
+            </form>
+
+            <table><!--la etiqueta table representa la tabla-->
+                <thead><!--representa el encabezado de la tabla-->
+                    <tr><!--representa la fila de la tabla y el td representa la celda  -->
+                        <th>Dia</th><!--representa la celda del encabezado de la tabla y tfoot el pie de pagina de la tabla-->
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tbody><!--representa el cuerpo de la tabla-->
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08h-20h</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08h-20h</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h-20h</td>
+                    </tr>
+
+                </tbody>                                            
+            </table>
+        </main>
+
+        <footer> <!--pie de pagina-->
+            <img src="imagenes/logo-blanco.png">
+            <p class="copyright">&copy Copyright Barberia Alura - 2022</p>
+        </footer>
+
+
+
+          
+    </body>      
+</html>    
